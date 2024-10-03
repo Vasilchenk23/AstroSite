@@ -1,28 +1,24 @@
-export const AboutUs = () => {
-    return(
-        <>
+export const AboutUs = () => (
+    <>
         <div className="block-about-us">
-            <h2>Про нас</h2>
+            <h2>ПРО НАС</h2>
             <div className="info-block">
                 <div className="text-block">
-                    <p>numquam in consequuntur beatae doloribus. Rerum quo repellendus est sapiente vel est. Necessitatibus inventore sapiente maxime est velit perspiciatis eos est deserunt. Totam molestiae sed odio est. Alias culpa ut cumque autem.
-numquam in consequuntur beatae doloribus. Rerum quo repellendus est sapiente vel est. Necessitatibus inventore sapiente maxime est velit perspiciatis eos est deserunt. Totam molestiae sed odio est. Alias culpa ut cumque autem.</p>
+                    <p>
+                        Astro Club — це твій простір для розвитку особистості, нових знайомств та пошуку себе. <br />
+                        <br />
+                        Ми поєднуємо науку, творчість та сучасні практики, пропонуючи простір для особистісного зростання. У нас ти зможеш досліджувати астрономію, вивчати психологію, астрологію, психосоматику, а також розвивати навички у сфері косметології, візажу, SMM і відеозйомки.<br />
+                        <br />
+                        Наша мета — допомогти кожному знайти себе, розкрити потенціал і створити коло однодумців для обміну ідеями та досвідом.<br />
+                        <br />
+                    </p>
                 </div>
                 <div className="image-block">
                     <img src="./img/deco/info-image.png" alt="" />
                 </div>
             </div>
-            <h2>Чому саме ми?</h2>
-            <div className="why-my">
-                <div className="why-my-text-block">
-                    <p>numquam in consequuntur beatae doloribus. Rerum quo repellendus est sapiente vel est. Necessitatibus inventore sapiente maxime est velit perspiciatis eos est deserunt. Totam molestiae sed odio est. Alias culpa ut cumque autem.
-numquam in consequuntur beatae doloribus. Rerum quo repellendus est sapiente vel est. Necessitatibus inventore sapiente maxime est velit perspiciatis eos est deserunt. Totam molestiae sed odio est. Alias culpa ut cumque autem.</p>
-                </div>
-                <div className="image-block">
-                    <img src="./img/deco/why-me-image.png" alt="" />
-                </div>
-            </div>
+            <h2>ЧОМУ ВАМ ТРЕБА ДО НАС?</h2>
+            
         </div>
-        </>
-    );
-}
+    </>
+)

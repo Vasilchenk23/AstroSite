@@ -1,19 +1,67 @@
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('../public/font/static/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url('../public/font/static/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: LexendDeca-Regular;
+  src: url('../public/font/LexendDeca-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../public/font/static/Montserrat-Bold.ttf');
+}
+
+h2 {
+  font-family: Montserrat-Bold;
+  color: #0E2954;
+}
+
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFF7E4;
+  background: linear-gradient(to bottom, #C9AD88 -86%, #FFF6E4 43%);
+  font-family: Montserrat-Medium;
 }
 
 header {
   display: flex;
   justify-content: space-around;
-  margin-top: 70px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #652B2A, #B55251); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.left-header {
+  border-bottom: 2px solid #CFA18A;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.right-header {
+  border-bottom: 2px solid #CFA18A;
+  display: flex;
+  height: 40px;
+  justify-content: space-around;
+  width: 50%;
 }
 
 .header-block{
   display: flex;
-  width: 60%;
+  width: 80%;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
 .header-block ul {
@@ -23,8 +71,63 @@ header {
   width: 100%;
 }
 
+.logo {
+  margin: 0px 50px;
+}
+
 li {
   list-style: none;
+}
+
+.center-block-h1 {
+  font-size: 72px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #446AA3, #284371); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-family: LexendDeca-Regular;
+}
+
+.center-block-page {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #652B2A, #B55251); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.button-container {
+  text-align: center;
+}
+
+.oval-button {
+  background-color: #D7B8A6;
+  color: #5D2A27;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.oval-button:hover {
+  background-color: #C2A08F; 
+}
+
+.oval-button::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .center-block {
@@ -37,9 +140,47 @@ li {
 
 .callback-block {
   display: flex;
-  width: 90%;
+  width: 95%;
   margin-top: 100px;
   justify-content: end;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.call {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  align-items: center;
+  align-content: center;
+}
+
+.call p {
+  color: #CFA18A;
+  font-size: 24px;
+}
+
+.white-block {
+  background: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -51,6 +192,7 @@ li {
 
 .block-about-us h2 {
   text-align: center;
+  color: #0E2954;
 }
 
 .info-block {
@@ -64,19 +206,34 @@ li {
   justify-content: center;
   align-items: center;
   height: auto;
-}
-
-.why-my-text-block {
-  width: 522px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
+  font-size: 24px;
 }
 
 .why-my {
   display: flex;
-  justify-content: center;
+  justify-content: space-around; 
+  gap: 20px; 
+  padding: 40px;
+}
+
+
+.icon {
+  font-size: 40px;
+  color: #D3B9AA; 
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #5D2A27;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 16px;
+  color: #7D7D7D; 
+  line-height: 1.5;
 }
 
 /* Speakers Component */
@@ -108,6 +265,7 @@ li {
   margin-bottom: 15px;
 }
 
+
 .speaker-card h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
@@ -129,7 +287,110 @@ li {
   margin-top: 100px;
 }
 
+.card {
+  width: 360px;
+  height: 240px; 
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative; 
+  border-radius: 30px;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s; 
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .front {
+  transform: rotateY(180deg); 
+}
+
+.card:hover .back {
+  transform: rotateY(0deg); 
+}
+
+.card-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 13px; 
+  color: white; 
+  background: linear-gradient(to bottom, #446AA3, #284371); 
+}
+
+.card-info h2 {
+  text-align: center;
+}
+
+.card:nth-child(2) .card-text {
+  background: linear-gradient(to bottom, #652B2A, #B55251); 
+}
+
 .button-center {
   display: flex;
   justify-content: center;
+}
+
+.button-center button {
+  width: 255px;
+  height: 58px;
+  border-radius: 30px;
+  background-color: #CFA18A;
+  color: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+
+/* Contact Component */
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.line {
+  width: 450px;
+  height: 1px;
+  background: #CFA18A;
+}
+
+footer {
+  display: flex;
+}
+
+.footer-right {
+  margin-left: 200px;
+  font-size: 18px;
+}
+
+.footer-right p{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: center;
+}
+
+.footer-right h2 {
+  font-size: 20px;
+}
+
+.copyright{
+  font-size: 26px;
 }
