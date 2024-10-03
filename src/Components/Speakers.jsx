@@ -51,7 +51,11 @@ const speakers = [
 export const Speakers = () => {
   return (
     <>
-      <h2 className='speakers-h2'>Cпікери</h2>
+      <div className="contact">
+        <div className="line"></div>
+        <h2 className='speakers-h2'>Cпікери</h2>
+        <div className="line"></div>
+      </div>
       <div className="speakers-grid">
         {speakers.map((speaker, index) => (
           <div key={index} className="speaker-card">
@@ -63,6 +67,13 @@ export const Speakers = () => {
           </div>
         ))}
       </div>
+      <div className="contact">
+      <div className="line"></div>
+          <div className="button-container">
+            <button className="oval-button">Отримати <br /> консультацiю</button>
+          </div>
+      <div className="line"></div>
+    </div>
     </>
   );
 };

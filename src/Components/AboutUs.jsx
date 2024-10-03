@@ -17,8 +17,30 @@ export const AboutUs = () => (
                     <img src="./img/deco/info-image.png" alt="" />
                 </div>
             </div>
-            <h2>ЧОМУ ВАМ ТРЕБА ДО НАС?</h2>
-            
+            <div className="contact">
+              <div className="line"></div>
+              <h2>ЧОМУ ВАМ ТРЕБА ДО НАС?</h2>
+              <div className="line"></div>
+            </div>
+            <div class="why-us-section">
+              <div class="cards-container">
+                <div class="card-container">
+                  <div class="icon">⭐</div>
+                  <h3>Розвиток</h3>
+                  <p>Pulvinar orci at sem egestas ultricies, lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="card-container">
+                  <div class="icon">⭐</div>
+                  <h3>Спільнота</h3>
+                  <p>Pulvinar orci at sem egestas ultricies, lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="card-container">
+                  <div class="icon">⭐</div>
+                  <h3>Різноманітність</h3>
+                  <p>Pulvinar orci at sem egestas ultricies, lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
         </div>
     </>
 )

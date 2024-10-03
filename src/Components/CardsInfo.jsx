@@ -5,7 +5,7 @@ export const CardsInfo = () => {
         <>
             <div className="center-block">
                 <div className="block">
-                    <h2>КЛУБНI КАРТИ</h2>
+                    <h2>ПРИДБАТИ КАРТУ</h2>
                     <p>для придбання картки Ви можете сплатити онлайн і прислати скрин в особисті <br /> разове відвідування 350 грн  </p>
                 </div>
             </div>

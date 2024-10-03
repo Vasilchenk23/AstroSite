@@ -18,6 +18,27 @@
   src: url('../public/font/static/Montserrat-Bold.ttf');
 }
 
+:-webkit-scrollbar {
+  width: 6px; 
+  }
+
+
+::-webkit-scrollbar-track {
+  background: #FEFAF6; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #2A2E35; 
+  border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2A2E35; 
+}
+
+
 h2 {
   font-family: Montserrat-Bold;
   color: #0E2954;
@@ -186,6 +207,55 @@ a {
 
 /* AboutUs Component */
 
+.why-us-section {
+  text-align: center;
+  padding: 50px 20px;
+  margin: 140px 0px;
+}
+
+.why-us-section h2 {
+  font-size: 24px;
+  color: #1e1e1e; 
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  padding: 20px;
+  width: 274px;
+  height: 238px;
+  border: 3px solid #CFA18A;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-container .icon {
+  font-size: 40px;
+  color: #f0c030; 
+  margin-bottom: 20px;
+}
+
+.card-container h3 {
+  font-size: 18px;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+.card-container p {
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+
 .block-about-us {
   margin-top: 160px;
 }
@@ -333,6 +403,7 @@ a {
 
 .card-info h2 {
   text-align: center;
+  color: white;
 }
 
 .card:nth-child(2) .card-text {
@@ -350,9 +421,12 @@ a {
   border-radius: 30px;
   background-color: #CFA18A;
   color: white;
+  font-size: 18px;
+  font-family: Montserrat-Medium;
   border: none;
   align-items: center;
   text-align: center;
+  margin-top: 200px;
 }
 
 /* Contact Component */
@@ -383,7 +457,7 @@ footer {
 .footer-right p{
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: 400px;
   align-items: center;
 }
 
@@ -394,3 +468,58 @@ footer {
 .copyright{
   font-size: 26px;
 }
+
+
+/* Reviews  Component*/
+
+.feedback-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5e9d6; /* Beige background */
+}
+
+.feedback-section h2 {
+  font-size: 24px;
+  color: #1e1e1e;
+  margin-bottom: 40px;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feedback-card1 {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 543px;
+  height: 254px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.feedback-card2 {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 289;
+  height: 104px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.feedback-card3 {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 124;
+  height: 179px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+
