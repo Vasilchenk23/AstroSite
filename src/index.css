@@ -467,7 +467,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 100px auto;
+  margin: 200px auto;
 }
 
 .contact h1 {
@@ -561,7 +561,8 @@ footer {
 
 @media (max-width: 1200px) {
   .center-block {
-      display: block;
+    display: block;
+    margin-top: 150px;
   }
 
   .video-container {
@@ -603,6 +604,7 @@ footer {
   .speaker-card {
     width: 80%;
     height: 26vh;
+    margin-top: 200px;
   }
   .speaker-card img {
     width: 400px;
@@ -635,7 +637,33 @@ footer {
   .left-header svg{
     display: none;
   }
-  .right-header {
+  .info-block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .info-block2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .image-block {
+    display: flex;
+    justify-items: center;
+    justify-content: start;
+    align-items: center;
     width: 80%;
+    margin: 0 auto;
+  }
+  .text-block {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .callback-block {
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 70%;
+  }
+  .video-container {
+    margin-top: 190px;
   }
 }

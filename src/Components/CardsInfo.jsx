@@ -51,7 +51,7 @@ export const CardsInfo = () => {
                 </div>
             </div>
             <div className="button-center">
-                <button>купити картку</button>
+                <button>Придбати картку</button>
             </div>
         </>
     );
