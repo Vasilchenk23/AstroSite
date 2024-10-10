@@ -111,8 +111,8 @@ li {
 }
 
 .center-block-page {
-  font-size: 16px;
-  /* font-weight: bold; */
+  font-size: 24px;
+  font-weight: bold;
   background: linear-gradient(to bottom, #652B2A, #B55251); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
@@ -363,10 +363,9 @@ a {
   color: #666;
 }
 
-.speakers-h1 {
+.contact h1 {
   text-align: center;
   color: #0E2954;
-  font-size: 40px;
 }
 
 /* CardsInfo Component */
@@ -664,6 +663,63 @@ footer {
     width: 70%;
   }
   .video-container {
-    margin-top: 190px;
+    margin-top: 140px;
+  }
+  .center-block-page {
+    font-size: 10px;
+    margin-bottom: 70px;
+  }
+  .oval-button {
+    font-size: 30px;
+    width: 350px;
+    height: 80px;
+  }
+  .block p {
+    font-size: 30px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .block h2 {
+    font-size: 40px;
+  }
+  .button-center button {
+    font-size: 30px;
+    width: 350px;
+    height: 80px;
+  }
+  .contact h2 {
+    font-size: 40px;
+  }
+  .contact h1 {
+    font-size: 40px;
+  }
+  .block-about-us h2 {
+    font-size: 40px;
+    margin-bottom: 200px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .map {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 30px;
+    border: 5px solid #C2A08F;;
+  }
+  .footer-right h2 {
+    font-size: 40px;
+  }
+  .footer-right {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer-right p {
+    font-size: 30px;
+    width: 100%;
   }
 }

@@ -53,7 +53,7 @@ export const Speakers = () => {
     <>
       <div className="contact">
         <div className="line"></div>
-        <h1 className='speakers-h1'>Cпікери</h1>
+        <h1>Cпікери</h1>
         <div className="line"></div>
       </div>
       <div className="speakers-grid">
@@ -70,7 +70,7 @@ export const Speakers = () => {
       <div className="contact">
       <div className="line"></div>
           <div className="button-container">
-            <button className="oval-button">Отримати <br /> консультацiю</button>
+            <button className="oval-button">Придбати картку</button>
           </div>
       <div className="line"></div>
     </div>

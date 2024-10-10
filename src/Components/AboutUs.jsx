@@ -37,20 +37,20 @@ export const AboutUs = () => (
               <h1>ЧОМУ ВАМ ТРЕБА ДО НАС?</h1>
               <div className="line"></div>
             </div>
-            <div class="why-us-section">
-              <div class="cards-container">
-                <div class="card-container">
-                  <div class="icon">⭐</div>
+            <div className="why-us-section">
+              <div className="cards-container">
+                <div className="card-container">
+                  <div className="icon">⭐</div>
                   <h3>Розвиток</h3>
                   <p>Pulvinar orci at sem egestas ultricies, lorem ipsum dolor sit amet.</p>
                 </div>
-                <div class="card-container">
-                  <div class="icon">⭐</div>
+                <div className="card-container">
+                  <div className="icon">⭐</div>
                   <h3>Спільнота</h3>
                   <p>Pulvinar orci at sem egestas ultricies, lorem ipsum dolor sit amet.</p>
                 </div>
-                <div class="card-container">
-                  <div class="icon">⭐</div>
+                <div className="card-container">
+                  <div className="icon">⭐</div>
                   <h3>Різноманітність</h3>
                   <p>Pulvinar orci at sem egestas ultricies, lorem ipsum dolor sit amet.</p>
                 </div>
