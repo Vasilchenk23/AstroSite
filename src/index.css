@@ -111,7 +111,7 @@ li {
 }
 
 .center-block-page {
-  font-size: 24px;
+  /* font-size: 24px; */
   font-weight: bold;
   background: linear-gradient(to bottom, #652B2A, #B55251); 
   -webkit-background-clip: text;
