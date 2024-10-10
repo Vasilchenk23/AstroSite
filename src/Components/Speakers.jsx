@@ -53,7 +53,7 @@ export const Speakers = () => {
     <>
       <div className="contact">
         <div className="line"></div>
-        <h2 className='speakers-h2'>Cпікери</h2>
+        <h1 className='speakers-h1'>Cпікери</h1>
         <div className="line"></div>
       </div>
       <div className="speakers-grid">

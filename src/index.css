@@ -52,6 +52,7 @@ body {
   font-family: Montserrat-Medium;
 }
 
+
 header {
   display: flex;
   justify-content: space-around;
@@ -153,11 +154,28 @@ li {
 
 .center-block {
   display: flex;
-  justify-content: center;
-  align-self: center;
+  justify-content: space-around;
   margin-top: 100px;
   text-align: center;
 }
+
+.video-container {
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  border: 5px solid #C2A08F;
+  border-radius: 30px;
+}
+
+.video-frame {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+
 
 .callback-block {
   display: flex;
@@ -345,21 +363,25 @@ a {
   color: #666;
 }
 
-.speakers-h2 {
+.speakers-h1 {
   text-align: center;
+  color: #0E2954;
+  font-size: 40px;
 }
 
 /* CardsInfo Component */
 
 .cards {
-  display: flex;
   justify-content: space-around;
   margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .card {
-  width: 360px;
-  height: 240px; 
+  width: 584px;
+  height: 359px; 
   perspective: 1000px;
   cursor: pointer;
   position: relative; 
@@ -401,6 +423,15 @@ a {
   background: linear-gradient(to bottom, #446AA3, #284371); 
 }
 
+
+.card-text p{
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
 .card-info h2 {
   text-align: center;
   color: white;
@@ -437,6 +468,11 @@ a {
   justify-content: space-around;
   align-items: center;
   margin: 100px auto;
+}
+
+.contact h1 {
+  text-align: center;
+  color: #0E2954;
 }
 
 .line {
@@ -523,3 +559,83 @@ footer {
 }
 
 
+@media (max-width: 1200px) {
+  .center-block {
+      display: block;
+  }
+
+  .video-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    height: 40vh;
+  }
+  .text-block { 
+    margin-left: 30px;
+    display: flex;
+    align-items: start;
+    font-size: 26px;
+    width: 70%;
+  }
+  .image-block {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-container {
+    width: 70%;
+    margin-top: 30px;
+    height: 20vh;
+  }
+  .speakers-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .speaker-card {
+    width: 80%;
+    height: 26vh;
+  }
+  .speaker-card img {
+    width: 400px;
+    height: 400px;
+  }
+  .speaker-card h3 {
+    font-size: 2.5em;
+    margin-top: 40px;
+  }
+  .overlay {
+    font-size: 1.3em;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin-top: 100px;
+  }
+  .header-block ul {
+    width: 100%;
+  }
+  .header-block {
+    width: 100%;
+  }
+  header {
+    font-size: 25px;
+  }
+  .left-header svg{
+    display: none;
+  }
+  .right-header {
+    width: 80%;
+  }
+}

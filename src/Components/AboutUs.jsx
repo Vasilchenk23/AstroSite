@@ -19,7 +19,7 @@ export const AboutUs = () => (
             </div>
             <div className="contact">
               <div className="line"></div>
-              <h2>ЧОМУ ВАМ ТРЕБА ДО НАС?</h2>
+              <h1>ЧОМУ ВАМ ТРЕБА ДО НАС?</h1>
               <div className="line"></div>
             </div>
             <div class="why-us-section">

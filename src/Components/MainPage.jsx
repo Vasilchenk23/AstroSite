@@ -47,6 +47,12 @@ export const MainPge = () => {
                     <button className="oval-button">Отримати <br /> консультацiю</button>
                 </div>
             </div>
+            <div className="video-container">
+                <video autoPlay loop muted className="video-frame">
+                    <source src="./video/video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
         <div className="callback-block">
                <div className="call">
